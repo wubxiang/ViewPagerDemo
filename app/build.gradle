@@ -4,6 +4,11 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     defaultConfig {
         applicationId "com.wbx.viewpagerdemo"
         minSdkVersion 21
@@ -30,4 +35,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    // https://github.com/youth5201314/banner
+    implementation 'com.youth.banner:banner:2.1.0'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
 }
